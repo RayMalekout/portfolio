@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="./lib/bootstrap/bootstrap.css">
+
+<script src = ".\index.js"> </script>
+
+
+<title>
+
+Internet of Things Simulator
+
+</title>
+
+</head>
+
+<body>
+<div class="jumbotron text-center">
+<p> Click on all the IoT objects in the city to create the objects. Then click IoT objects to get random stats on each one. </p>
+
+
+<div>
+<br>
+  <form>
+    Create your own internet of things dustbin <br> <br>
+    Enter the name for the new bin:
+    <input name="binName" id="binName" type="text">  <br>
+    Enter bin capacity:
+    <input name="binCapacity" id="binCapacity" type="text"> <br>
+    Enter bin location:
+    <input name="binLocation" id="binLocation" type="text"> <br>
+    Enter bin status:
+    <input name="binStatus" id="binStatus" type="text"> <br>
+  </form>
+
+</div>
+
+<br>
+<button type="button" onclick="newBin()"> Dustbin </button> <br> <br>
+<button type="button" onclick="newFridge()"> Fridge </button>
+<button type="button" onclick="newCar()"> Car </button>
+<button type="button" onclick="newWaterPipe()"> Water pipe </button> <br> <br>
+<button type="button" onclick="newBinProperty()"> Expand Bin properties </button>
+<button type="button" onclick="binProfile()"> All bin properties </button> <br> <br>
+<button type="button" onclick="output()"> IoT Objects </button>
+
+
+</div>
+
+
+</body>
