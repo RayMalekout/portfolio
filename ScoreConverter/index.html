@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+<meta charset="utf-8">
+
+
+  <title>
+
+  Score Converter
+  </title>
+
+<script src="scoreconverter.js"> </script>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+
+</head>
+
+<body>
+
+<div>
+<form>
+  <h4> Enter a range of values for each attribute and the weighted score will be returned </h4>
+  <br>
+  Agility score:
+<input name="agilityscore" id="agilityscore" type="text"> <br>
+Power score:
+<input name="powerscore" id="powerscore" type="text"> <br>
+Intelligence score:
+<input name="intelligencescore" id="intelligencescore" type="text"> <br>
+Originality score:
+<input name="originalityscore" id="originalityscore" type = "text"> <br> <br>
+
+<button type="button" onclick="setvalues()" id="convertscore" name="convertscore"> Click to calculate weighted score </button>
+<br> <br>
+<label for="output">The weighted score is: </label><input type="textbox" name="result" id="result"></input>
+
+</form>
+
+</div>
+
+<button onclick="goBack()">Go Back</button>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="../lib/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="index.css">
+
+<script src = ".\index.js"> </script>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+<title>
+
+Internet of Things Simulator
+
+</title>
+
+</head>
+
+<body>
+
+
+<div class="jumbotron text-center">
+
+  <h1> Welcome to the Internet of Things City </h1> <br>
+  <p>   Create your own IoT vehicle </p>
+<p> Then click on all the IoT objects in the city to create the objects. </p>
+<p> Then click 'Expand vehicle properties' followed by 'All vehicle properties' to make a more advanced vehicle </p>
+<p> Then click IoT objects to see the current properties of all the IoT devices </p>
+
+
+<div>
+
+
+  <br>
+
+    <table class ="table">
+      <thead>
+        <tr>
+
+          <th> Enter Values for a New Vehicle Below </th>
+
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+
+          <td>   Vehicle name <br> <input name="vehicleName" id="vehicleName" type="text" class="text-center"> </td>
+          </tr>
+
+          <tr>
+
+      <td>   Vehicle capacity <br> <input name="vehicleCapacity" id="vehicleCapacity" type="text" class="text-center">  </td>
+    </tr>
+
+    <tr>
+
+      <td>   Vehicle location <br> <input name="vehicleLocation" id="vehicleLocation" type="text" class="text-center"> </td>
+      </tr>
+
+    <tr>
+
+      <td>   Vehicle status <br> <input name="vehicleStatus" id="vehicleStatus" type="text" class="text-center"> </td>
+      </tr>
+
+      <tr>
+
+        <thead>
+          <tr>
+            <th> Internet of Things Devices </th>
+           </tr>
+        </thead>
+
+
+        <td>   <button type="button" onclick="newVehicle()"  class="btn btn-primary"> Vehicle </button>
+        <button type="button" onclick="newFridge()" class="btn btn-primary"> Fridge </button>
+        <button type="button" onclick="newCar()" class="btn btn-primary"> Car </button>
+        <button type="button" onclick="newWaterPipe()" class="btn btn-primary"> Water pipe </button> </td>
+        </tr>
+
+
+
+
+  </tbody>
+</table>
+
+
+</div>
+
+<button type="button" onclick="newVehicleProperty()"  class="btn btn-primary"> Expand vehicle properties </button>
+<button type="button" onclick="vehicleProfile()"  class="btn btn-primary"> All vehicle properties </button> <br> <br>
+<button type="button" onclick="output()"  class="btn btn-primary"> IoT Objects </button>
+<br>
+<br>
+<button type="button" onclick="goBack()" class="btn btn-success">Go Back</button>
+
+</div>
+
+
+</body>

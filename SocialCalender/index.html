@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<!-- <link rel="stylesheet" href="index.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="index.js"> </script>
+
+<title>
+Social Calender
+</title>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- <div id = "5" align > -->
+<div class="jumbotron text-center">
+  <h1> Social Calender </h1>
+    <p> Select a combination of options. The application will keep track of all your selected choices. It will warn you if you are trying to do too many activities in one day.  </p>
+
+<form>
+
+    <input type="radio"  onclick="choice1()"id ="Art Gallery" name="activity" value="Gallery"> Gallery - 11am </input> <br>
+    <input type="radio"  onclick="choice2()"id ="Lunch" name="activity" value="Lunch"> Lunch - 12:30pm </input> <br>
+    <input type="radio"  onclick="choice3()"id ="Golfing" name="activity" value="Golf"> Golfing - 2pm </input> <br>
+    <input type="radio" onclick="choice4()" id ="Dinner" name="activity" value="Dinner"> Dinner at local restaurant - 6:30pm </input>  <br>
+    <input type="radio" onclick="choice5()"id ="Cinema" name="activity" value ="Cinema"> Cinema with James - 8pm </input> <br>
+
+</form>
+
+<br> <br>
+
+<button onclick="goBack()">Go Back</button>
+
+</div>
+
+
+
+</body>
+
+<!-- </div>   -->
+
+
+
+</html>
